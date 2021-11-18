@@ -1,0 +1,20 @@
+[
+    {
+        "model": "app.Event",
+        "pk": 1,
+        "fields": {
+            "name": "Hulkgang",
+            "url": "https://ticketmaster.com/123123",
+            "venue": 1
+        }
+    },
+    {
+        "model": "app.Event",
+        "pk": 2,
+        "fields": {
+            "name": "Tiesto",
+            "url": "https://ticketmaster.com/23411",
+            "venue": 2
+        }
+    }
+]

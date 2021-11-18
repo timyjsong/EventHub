@@ -1,0 +1,25 @@
+[
+    {
+        "model": "app.Venue",
+        "pk": 1,
+        "fields": {
+            "name": "Royale",
+            "url": "https://royale.com",
+            "parking_detail": "N/A",
+            "accessible_seating": true,
+            "general_rule": "N/A"
+        }
+    },
+    {
+        "model": "app.Venue",
+        "pk": 2,
+        "fields": {
+            "name": "Madison Square Garden",
+            "url": "https://msg.com",
+            "parking_detail": "parking garage",
+            "accessible_seating": true,
+            "general_rule": "N/A"
+        }
+
+    }
+]

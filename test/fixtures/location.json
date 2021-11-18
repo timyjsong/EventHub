@@ -1,0 +1,23 @@
+[
+    {
+        "model": "app.Location",
+        "pk": 1,
+        "fields": {
+            "address": "123 something way",
+            "longitude": 11.2312412,
+            "latitude": 45.324212,
+            "city": 1
+        }
+    },
+    {
+        "model": "app.Location",
+        "pk": 2,
+        "fields": {
+            "address": "123 something way",
+            "longitude": 42.523423,
+            "latitude": 17.456443,
+            "city": 2
+        }
+
+    }
+]
