@@ -1,0 +1,29 @@
+[
+    {
+        "model": "app.Address",
+        "pk": 1,
+        "fields": {
+            "address_name": "123 something way",
+            "longitude": 11.2312412,
+            "latitude": 45.324212,
+            "city_name": "Boston",
+            "state_code": "MA",
+            "country_code": "US",
+            "city_key": 1
+        }
+    },
+    {
+        "model": "app.Address",
+        "pk": 2,
+        "fields": {
+            "address_name": "123 something way",
+            "longitude": 42.523423,
+            "latitude": 17.456443,
+            "city_name": "New York City",
+            "state_code": "NY",
+            "country_code": "US",
+            "city_key": 2
+        }
+
+    }
+]

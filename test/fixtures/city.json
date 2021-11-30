@@ -3,17 +3,20 @@
         "model": "app.City",
         "pk": 1,
         "fields": {
-            "name": "Boston",
-            "state": 1
+            "city_name": "Boston",
+            "state_code": "MA",
+            "country_code": "US",
+            "state_key": 1
         }
     },
     {
         "model": "app.City",
         "pk": 2,
         "fields": {
-            "name": "New York City",
-            "state": 2
+            "city_name": "New York City",
+            "state_code": "NY",
+            "country_code": "US",
+            "state_key": 2
         }
-
     }
 ]

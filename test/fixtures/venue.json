@@ -3,22 +3,32 @@
         "model": "app.Venue",
         "pk": 1,
         "fields": {
-            "name": "Royale",
-            "url": "https://royale.com",
-            "parking_detail": "N/A",
-            "accessible_seating": true,
-            "general_rule": "N/A"
+            "venue_name": "Royale",
+            "venue_url": "https://royale.com",
+            "venue_parking_detail": "N/A",
+            "venue_accessible_seating": true,
+            "venue_general_rule": "N/A",
+            "address_name": "123 something way",
+            "city_name": "Boston",
+            "state_code": "MA",
+            "country_code": "US",
+            "address_key": 1
         }
     },
     {
         "model": "app.Venue",
         "pk": 2,
         "fields": {
-            "name": "Madison Square Garden",
-            "url": "https://msg.com",
-            "parking_detail": "parking garage",
-            "accessible_seating": true,
-            "general_rule": "N/A"
+            "venue_name": "Madison Square Garden",
+            "venue_url": "https://msg.com",
+            "venue_parking_detail": "parking garage",
+            "venue_accessible_seating": true,
+            "venue_general_rule": "N/A",
+            "address_name": "123 something way",
+            "city_name": "New York City",
+            "state_code": "NY",
+            "country_code": "US",
+            "address_key": 2
         }
 
     }

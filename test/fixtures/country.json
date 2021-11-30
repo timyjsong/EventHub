@@ -3,16 +3,16 @@
         "model": "app.Country",
         "pk": 1,
         "fields": {
-            "name": "United States",
-            "code": "US"
+            "country_name": "United States",
+            "country_code": "US"
         }
     },
     {
         "model": "app.Country",
         "pk": 2,
         "fields": {
-            "name": "South Korea",
-            "code": "KR"
+            "country_name": "South Korea",
+            "country_code": "KR"
         }
 
     }

@@ -3,18 +3,20 @@
         "model": "app.State",
         "pk": 1,
         "fields": {
-            "name": "Massachusetts",
-            "code": "MA",
-            "country": 1
+            "state_name": "Massachusetts",
+            "state_code": "MA",
+            "country_code": "US",
+            "country_key": 1
         }
     },
     {
         "model": "app.State",
         "pk": 2,
         "fields": {
-            "name": "New York",
-            "code": "NY",
-            "country": 1
+            "state_name": "New York",
+            "state_code": "NY",
+            "country_code": "US",
+            "country_key": 1
         }
 
     }

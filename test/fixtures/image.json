@@ -3,18 +3,18 @@
         "model": "app.Image",
         "pk": 1,
         "fields": {
-            "url": "https://ticketmaster.com/123123",
-            "width": 142,
-            "height": 1233
+            "image_url": "https://ticketmaster.com/123123",
+            "image_width": 142,
+            "image_height": 1233
         }
     },
     {
         "model": "app.Image",
         "pk": 2,
         "fields": {
-            "url": "https://ticketmaster.com/123123",
-            "width": 4312,
-            "height": 360
+            "image_url": "https://ticketmaster.com/123123",
+            "image_width": 4312,
+            "image_height": 360
         }
     }
 ]
