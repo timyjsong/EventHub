@@ -68,7 +68,7 @@ class Event:
 
 
 def main():
-    filename = __file__.replace("event.py", "cache/consolidated.json")
+    filename = __file__.replace("fixture_util/event.py", "cache/consolidated.json")
 
     with open(filename, "r") as f:
         data = json.load(f)

@@ -58,7 +58,7 @@ class Venue:
 
 
 def main():
-    filename = __file__.replace("venue.py", "cache/consolidated.json")
+    filename = __file__.replace("fixture_util/venue.py", "cache/consolidated.json")
 
     with open(filename, "r") as f:
         data = json.load(f)

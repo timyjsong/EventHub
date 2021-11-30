@@ -2,30 +2,30 @@ from fixture import Fixture
 import json
 
 
-class Info:
+class Image:
 
-    model = "app.Info"
+    model = "app.Image"
 
     def __init__(self, data):
         self.fixtures = []
 
-        # Populate infos set with info fields 
-        infos = set()
+        # Populate images set with image fields 
+        images = set()
         for element in data:
-            fields = element.get("info")
-            info_keys = tuple(fields)
-            info_values = tuple(fields.values())
-            info = (info_keys, info_values)
-            infos.add(info)
+            fields = element.get("image")
+            image_keys = tuple(fields)
+            image_values = tuple(fields.values())
+            image = (image_keys, image_values)
+            images.add(image)
 
         # also appends to a list-of-dict structure
-        unique_infos = []
-        for info in infos:
-            unique_info = dict(zip(*info))
-            unique_infos.append(unique_info)
+        unique_images = []
+        for image in images:
+            unique_image = dict(zip(*image))
+            unique_images.append(unique_image)
 
         # assigning primary key 
-        for i, fields in enumerate(unique_infos):
+        for i, fields in enumerate(unique_images):
             pk = i + 1
             fixture = Fixture(self.model, pk, fields)
             self.fixtures.append(fixture)
@@ -40,19 +40,19 @@ class Info:
                 fk = fixture.pk
                 break
         else:
-            raise Exception(f"Could not find in info")
+            raise Exception(f"Could not find in image")
         
         return fk
 
 
 def main():
-    filename = __file__.replace("info.py", "cache/consolidated.json")
+    filename = __file__.replace("fixture_util/image.py", "cache/consolidated.json")
 
     with open(filename, "r") as f:
         data = json.load(f)
 
-    info_fixtures = Info(data)
-    for fixture in info_fixtures:
+    image_fixtures = Image(data)
+    for fixture in image_fixtures:
         print(fixture.get_fixture())
     
 

@@ -45,7 +45,7 @@ class Country:
 
 
 def main():
-    filename = __file__.replace("country.py", "cache/consolidated.json")
+    filename = __file__.replace("fixture_util/country.py", "cache/consolidated.json")
 
     with open(filename, "r") as f:
         data = json.load(f)
