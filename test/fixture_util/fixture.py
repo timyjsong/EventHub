@@ -1,3 +1,4 @@
+
 class Fixture:
 
     def __init__(self, model, pk, fields):
@@ -13,7 +14,7 @@ class Fixture:
         }
 
 
-DIR_PATH = __file__.replace("fixture.py", "cache/consolidated.json")
+# DIR_PATH = __file__.replace("fixture_util/fixture.py", "cache/consolidated.json")
 
 
 def main():

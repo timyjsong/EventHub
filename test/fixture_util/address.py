@@ -57,7 +57,7 @@ class Address:
 
 
 def main():
-    filename = __file__.replace("address.py", "cache/consolidated.json")
+    filename = __file__.replace("fixture_util/address.py", "cache/consolidated.json")
 
     with open(filename, "r") as f:
         data = json.load(f)
