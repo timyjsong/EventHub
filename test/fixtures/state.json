@@ -1,0 +1,23 @@
+[
+    {
+        "model": "app.State",
+        "pk": 1,
+        "fields": {
+            "state_name": "Massachusetts",
+            "state_code": "MA",
+            "country_code": "US",
+            "country_key": 1
+        }
+    },
+    {
+        "model": "app.State",
+        "pk": 2,
+        "fields": {
+            "state_name": "New York",
+            "state_code": "NY",
+            "country_code": "US",
+            "country_key": 1
+        }
+
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "model": "app.City",
+        "pk": 1,
+        "fields": {
+            "city_name": "Boston",
+            "state_code": "MA",
+            "country_code": "US",
+            "state_key": 1
+        }
+    },
+    {
+        "model": "app.City",
+        "pk": 2,
+        "fields": {
+            "city_name": "New York City",
+            "state_code": "NY",
+            "country_code": "US",
+            "state_key": 2
+        }
+    }
+]

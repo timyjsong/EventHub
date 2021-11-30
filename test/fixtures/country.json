@@ -1,0 +1,19 @@
+[
+    {
+        "model": "app.Country",
+        "pk": 1,
+        "fields": {
+            "country_name": "United States",
+            "country_code": "US"
+        }
+    },
+    {
+        "model": "app.Country",
+        "pk": 2,
+        "fields": {
+            "country_name": "South Korea",
+            "country_code": "KR"
+        }
+
+    }
+]

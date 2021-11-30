@@ -1,0 +1,26 @@
+[
+    {
+        "model": "app.Event",
+        "pk": 1,
+        "fields": {
+            "event_name": "Hulkgang",
+            "event_url": "https://ticketmaster.com/123123",
+            "venue_key": 1,
+            "image_key": 1,
+            "datetime_key": 1,
+            "info_key": 1
+        }
+    },
+    {
+        "model": "app.Event",
+        "pk": 2,
+        "fields": {
+            "event_name": "Tiesto",
+            "event_url": "https://ticketmaster.com/23411",
+            "venue_key": 2,
+            "image_key": 2,
+            "datetime_key": 2,
+            "info_key": 2
+        }
+    }
+]

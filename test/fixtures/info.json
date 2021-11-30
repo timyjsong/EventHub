@@ -1,0 +1,18 @@
+[
+    {
+        "model": "app.Info",
+        "pk": 1,
+        "fields": {
+            "please_note": "N/A",
+            "legal_age_enforced": true
+        }
+    },
+    {
+        "model": "app.Info",
+        "pk": 2,
+        "fields": {
+            "please_note": "This is MSG",
+            "legal_age_enforced": false
+        }
+    }
+]

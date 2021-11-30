@@ -1,0 +1,20 @@
+[
+    {
+        "model": "app.Image",
+        "pk": 1,
+        "fields": {
+            "image_url": "https://ticketmaster.com/123123",
+            "image_width": 142,
+            "image_height": 1233
+        }
+    },
+    {
+        "model": "app.Image",
+        "pk": 2,
+        "fields": {
+            "image_url": "https://ticketmaster.com/123123",
+            "image_width": 4312,
+            "image_height": 360
+        }
+    }
+]

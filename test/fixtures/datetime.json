@@ -1,0 +1,20 @@
+[
+    {
+        "model": "app.Datetime",
+        "pk": 1,
+        "fields": {
+            "local_start_date": "2022-02-18",
+            "local_start_time": "19:30:00",
+            "timezone": "America/New_York"
+        }
+    },
+    {
+        "model": "app.Datetime",
+        "pk": 2,
+        "fields": {
+            "local_start_date": "2022-02-19",
+            "local_start_time": "19:30:00",
+            "timezone": "America/New_York"
+        }
+    }
+]
