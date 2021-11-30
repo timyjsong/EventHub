@@ -106,7 +106,11 @@ def main(args):
             venue_state_code = venue_data["state"]["stateCode"]
             venue_country_name = venue_data["country"]["name"]
             venue_country_code = venue_data["country"]["countryCode"]
-            venue_address = venue_data["address"]["line1"] # potential multiple lines
+
+            venue_address = "N/A"
+            if venue_data.get("address"):
+                venue_address = venue_data["address"]["line1"] 
+
             venue_location_longitude = venue_data["location"]["longitude"]
             venue_location_latitude = venue_data["location"]["latitude"]
             venue_parking_detail = venue_data.get("parkingDetail", "N/A")

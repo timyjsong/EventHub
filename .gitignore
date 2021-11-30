@@ -2,3 +2,6 @@ __pycache__/
 venv/
 debug.log
 cache/
+test/
+eventhub_project/
+core/fixtures/
