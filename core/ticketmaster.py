@@ -5,7 +5,6 @@ import shutil
 import json
 from argparse import ArgumentParser
 
-from bs4 import BeautifulSoup
 import requests
 
 from logger import LOGGER
@@ -58,7 +57,7 @@ def main(args):
         url = "https://app.ticketmaster.com/discovery/v2/events.json"
         params = {
             "classificationName": "music",
-            "dmaId": "235",
+            "stateCode": "MA",
             "size": "200",
             "page": i,
             "apikey": "j1VmyKjOQxiSg8utJFq8A0nQ4uEJ4T8J"
@@ -116,7 +115,7 @@ def main(args):
             venue_general_rule = "N/A"
             if venue_data.get("generalInfo"):
                 venue_general_rule = venue_data["generalInfo"].get("generalRule", "N/A")
-            
+
             _event = {
                 "event": { 
                     "event_name": event_name,
@@ -127,7 +126,7 @@ def main(args):
                     "image_width": image_width,
                     "image_height": image_height 
                 },
-                "date": {
+                "datetime": {
                     "local_start_date": local_start_date,
                     "local_start_time": local_start_time,
                     "timezone": timezone
@@ -143,8 +142,8 @@ def main(args):
                     "venue_accessible_seating": venue_accessible_seating,
                     "venue_general_rule": venue_general_rule
                 },
-                "location": {
-                    "address": venue_address,
+                "address": {
+                    "address_name": venue_address,
                     "longitude": venue_location_longitude,
                     "latitude": venue_location_latitude
                 },
