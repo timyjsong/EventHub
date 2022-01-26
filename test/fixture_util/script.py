@@ -1,3 +1,4 @@
+import os
 import json
 
 from datetime import Datetime
@@ -26,6 +27,8 @@ def consolidate_json(path):
 
 
 def create_fixtures(fixtures_path, fixture_models):
+    if not os.path.exists(fixtures_path):
+        os.makedirs(fixtures_path, exist_ok=True)
 
     consolidated_fixtures = []
     for model in fixture_models:

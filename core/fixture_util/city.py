@@ -56,14 +56,16 @@ class City:
 
 
 def main():
-    filename = __file__.replace("fixture_util/city.py", "cache/consolidated.json")
+    filename = __file__.replace("fixture_util/city.py", "cache/consolidated_parsed.json")
 
     with open(filename, "r") as f:
         data = json.load(f)
 
+    print(data[1])
     city_fixtures = City(data)
-    for fixture in city_fixtures:
-        print(fixture.get_fixture())
+    print(data[1])
+    # for fixture in city_fixtures:
+    #     print(fixture.get_fixture())
 
 
 if __name__ == "__main__":
