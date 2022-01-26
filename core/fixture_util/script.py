@@ -20,7 +20,7 @@ def consolidate_json(path):
             data = json.load(f)
         agg_list += data
 
-    with open(f"{path}consolidated_new.json", "w") as f:
+    with open(f"{path}consolidated_parsed.json", "w") as f:
         json.dump(agg_list, f)
 
     return agg_list
@@ -40,11 +40,13 @@ def create_fixtures(fixtures_path, fixture_models):
             json.dump(fixture_list, f)
         consolidated_fixtures += fixture_list
 
-    with open(f"{fixtures_path}consolidated.json", "w") as f:
+    with open(f"{fixtures_path}consolidated_fixtures.json", "w") as f:
         json.dump(consolidated_fixtures, f)
 
 
 def main():
+
+
     models = [
         "datetime",
         "image",
@@ -62,7 +64,7 @@ def main():
     # creates a consolidated json file and returns the contents
     consolidate_json(file_path)
 
-    filename = __file__.replace("fixture_util/script.py", "cache/consolidated.json")
+    filename = __file__.replace("fixture_util/script.py", "cache/consolidated_parsed.json")
 
     with open(filename, "r") as f:
         data = json.load(f)
